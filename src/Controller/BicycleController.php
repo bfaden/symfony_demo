@@ -19,6 +19,7 @@ class BicycleController extends AbstractController
     }
 
     /**
+     * @Route("/", name="index")
      * @Route("/bicycle/list", name="list_bicycle")
      */
     public function list() : Response
