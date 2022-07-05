@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Delete</h1>
+
+    Are you sure you want to delete {{ bicycle.name }}
+
+    <a href="{{ path('confirm_delete_bicycle', {id : bicycle.id}) }}">Delete</a>
+    <a href="{{ path('list_bicycle') }}">Cancel</a>
+{% endblock %}
